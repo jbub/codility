@@ -9,7 +9,7 @@ type PermMissingElemTestSuite struct {
 	suite.Suite
 }
 
-func (s *PermMissingElemTestSuite) TestFrogJmp() {
+func (s *PermMissingElemTestSuite) TestPermMissingElem() {
 	s.Equal(4, PermMissingElem([]int{2, 3, 1, 5}))
 	s.Equal(3, PermMissingElem([]int{1, 4, 7, 6, 5, 2}))
 	s.Equal(2, PermMissingElem([]int{1}))
