@@ -1,7 +1,7 @@
-package codility
+package permcheck
 
-// PermCheck checks whether array A is a permutation.
-func PermCheck(A []int) int {
+// Solution checks whether array A is a permutation.
+func Solution(A []int) int {
 	N := len(A)
 	mapping := make(map[int]struct{})
 

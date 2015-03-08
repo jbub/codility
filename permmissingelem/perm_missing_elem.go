@@ -1,7 +1,7 @@
-package codility
+package permmissingelem
 
-// PermMissingElem finds the missing element in a given permutation.
-func PermMissingElem(A []int) int {
+// Solution finds the missing element in a given permutation.
+func Solution(A []int) int {
 	N := len(A)
 
 	actual := sum(A)

@@ -1,7 +1,7 @@
-package codility
+package frogjmp
 
-// FrogJmp counts minimal number of jumps from position X to Y.
-func FrogJmp(X int, Y int, D int) int {
+// Solution counts minimal number of jumps from position X to Y.
+func Solution(X int, Y int, D int) int {
 	distance := Y - X
 	jumps := distance / D
 	remains := distance % D

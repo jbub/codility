@@ -1,7 +1,7 @@
-package codility
+package tapeequilibrium
 
-// TapeEquilibrium minimizes the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
-func TapeEquilibrium(A []int) int {
+// Solution minimizes the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
+func Solution(A []int) int {
 	N := len(A)
 	s := sum(A)
 	i := 0
@@ -28,6 +28,14 @@ func TapeEquilibrium(A []int) int {
 	}
 
 	return min
+}
+
+func sum(A []int) int {
+	s := 0
+	for _, n := range A {
+		s += n
+	}
+	return s
 }
 
 func abs(val int) int {
